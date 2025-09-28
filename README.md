@@ -2,32 +2,49 @@
 
 A terminal chat UI that uses the OpenAI Responses API with Zapier MCP tools. Shows an ASCII banner on launch and provides a simple, chat-like experience with commands for help, powers, examples, clearing the screen, and exit.
 
-CLI Agent:
-![cli agent](assets/cli-agent.png)
-
-Sent Email:
-![sent-email](assets/sent-email.png)
-
-Meeting Calendar:
-![meeting-calendar](assets/meeting-calendar.png)
-
-Meeting Email:
-![meeting-email](assets/meeting-email.png)
-
-Telegram Message:
-![telegram-msg](assets/telegram-msg.png)
-
-Google Sheets:
-![google-sheets](assets/google-sheets.png)
-
-Google Sheets on CLI Agent:
-![google-sheets-cli-agent](assets/google-sheets-cli-agent.png)
-
 ### Features
 - Chat-style CLI with wrapped output and optional colors
 - Zapier MCP integration (tool_choice: required) to perform actions across:
   - Google Docs, Google Sheets, Google Calendar, Google Meet, Google Drive, Google Forms, Gmail, Telegram, WhatsApp
 - ASCII banner on launch (optional)
+
+### Screenshots (Live Demo)
+
+todo-list
+![todo-list](assets/todo-list.png)
+
+terminal-chat-1
+![terminal-chat-1](assets/terminal-chat-1.png)
+
+terminal-chat-2
+![terminal-chat-2](assets/terminal-chat-2.png)
+
+terminal-chat-3
+![terminal-chat-3](assets/terminal-chat-3.png)
+
+google-calendar
+![google-calendar](assets/google-calendar.png)
+
+gmail-google-meet
+![gmail-google-meet](assets/gmail-google-meet.png)
+
+gmail-invitation
+![gmail-invitation](assets/gmail-invitation.png)
+
+telegram-chat
+![telegram-chat](assets/telegram-chat.png)
+
+google-docs
+![google-docs](assets/google-docs.png)
+
+zapier-dashboard-1
+![zapier-dashboard-1](assets/zapier-dashboard-1.png)
+
+zapier-dashboard-2
+![zapier-dashboard-2](assets/zapier-dashboard-2.png)
+
+google-sheets-responses
+![google-sheets-responses](assets/google-sheets-responses.png)
 
 ### Requirements
 - Python 3.9+
