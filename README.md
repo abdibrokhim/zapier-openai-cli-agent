@@ -46,6 +46,71 @@ zapier-dashboard-2
 google-sheets-responses
 ![google-sheets-responses](assets/google-sheets-responses.png)
 
+### Step-by-step tutorial
+
+1) Check prerequisites
+- Python 3.9+ installed
+- Two API keys available: `OPENAI_API_KEY` and `ZAPIER_MCP_API_KEY`
+
+2) (Optional) Create and activate a virtual environment
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+3) Install dependencies
+```bash
+pip install openai python-dotenv art colorama
+```
+
+4) Configure environment variables
+- Option A (macOS/Linux):
+```bash
+export OPENAI_API_KEY=sk-...
+export ZAPIER_MCP_API_KEY=...
+```
+- Option B (.env file in project root; auto-loaded if `python-dotenv` is installed):
+```bash
+OPENAI_API_KEY=sk-...
+ZAPIER_MCP_API_KEY=...
+```
+
+5) Ensure your Zapier MCP account has access to the apps you plan to use
+- At minimum, connect Gmail and Google Calendar for the meeting demo
+- Optionally connect Google Docs, Sheets, Drive, Forms, Telegram, WhatsApp
+
+6) Run the CLI
+```bash
+python main.py
+```
+- When prompted, optionally enter your display name
+- Useful commands: `/help`, `/powers`, `/examples`, `/clear`, `/exit`
+
+7) Try a quick workflow
+- Schedule a meeting and email the attendee:
+```text
+Schedule a Google Meet on 20 Oct 2025, 10:00–11:00 with John Doe.
+My email abdibrokhim@gmail.com, his email theelofiguy@gmail.com.
+Send him a short, casual invite email about this coffee chat.
+```
+- Create a project brief in Docs:
+```text
+Create a Google Doc titled “Project Zap” with sections: Overview, Goals, Timeline, Risks.
+Share with ops@acme.com.
+```
+- Start a budget in Sheets:
+```text
+Create a budget Google Sheet with columns: Item, Cost, Owner. Add three sample rows.
+```
+
+8) Tips
+- The CLI uses `tool_choice="required"` so the model will actually call Zapier MCP tools
+- If `art` or `colorama` aren’t installed, the app falls back to plain output
+- You can paste transcripts/notes after a meeting and ask: “Summarize and save to Google Docs”
+
+9) Troubleshooting
+- See the Troubleshooting section below for common issues
+
 ### Requirements
 - Python 3.9+
 - Packages:
